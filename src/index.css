@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  height: 100%;
 }
 
 code {
@@ -12,16 +22,83 @@ code {
     monospace;
 }
 
-.carousel .carousel-item {
-  max-height: 460px;
+.swiper {
+  width: 75%;
+  height: 12rem;
 }
 
-.carousel-item img {
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  max-height: 460px;
 }
 
-i {
-  width: 3rem;
-  height: 3rem;
+.swiper-button-prev {
+  background-image: url(./components/images/prevv.png);
+  width: 2rem !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  background-image: url(./components/images/nextt.png);
+  width: 2rem !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-pagination-bullet-active {
+  background-color: #0e62ab !important;
+}
+
+.slide {
+  width: 70%;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.slider2-width {
+  width: 100%;
+}
+
+hr {
+  margin: 0;
+  height: 1rem;
+  background-color: lightgrey;
+  border: none;
+}
+
+.row {
+  margin-left: 0;
 }

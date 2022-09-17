@@ -1,10 +1,9 @@
 import React from 'react'
 import stone from '../images/stone.png'
-
 const Navbar = () => {
     return (
         <div >
-            <nav className="navbar navbar-expand-lg bg-light ">
+            <nav className="navbar navbar-expand-lg bg-light fixed-top" >
                 <div className="container-fluid" style={{ paddingLeft: '15rem', paddingRight: '15rem' }}>
                     <a className="navbar-brand " href="/">
                         <div className='d-flex flex-column'>
